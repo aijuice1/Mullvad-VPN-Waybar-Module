@@ -113,7 +113,7 @@ This wouldn't be possible without!
 
 https://github.com/Alexays/Waybar
 
-## Project I used to help me
+## Project I pulled from
 Thank you 
 https://github.com/Jonathandah/mullvad-waybar-module
 
