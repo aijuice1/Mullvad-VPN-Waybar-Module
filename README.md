@@ -1,7 +1,7 @@
 # Mullvad-VPN-Waybar-Module
 
 ## Dependencies
-'''bash
+'''
 Mullvad-vpn or Mullvad-vpn-cli
 '''
 
