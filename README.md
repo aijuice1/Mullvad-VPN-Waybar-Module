@@ -56,7 +56,7 @@ Feel free to add your own custom icons. I used [nerdfonts](nerdfonts.com) for th
 Add "custom/mullvad", to your waybar.conf file. Typically located in ~/.config/waybar
 Choose between Modules Left, Modules Center, or Modules Right"
 Place only the "custom/mullvad" amongst where you want it in your waybar order
-```
+```conf
 // Modules Right    
     "modules-right": [
         "custom/updates",
@@ -70,7 +70,7 @@ Place only the "custom/mullvad" amongst where you want it in your waybar order
 4)  Add the Mullvad Config Module.css wherever your waybar .css file is. Typically in the same foler as your waybar.conf and waybar.json file in ~./config/waybar
 Feel free to change the colors under define color after the hashtag for the specific color you would like
 You can also change the width, margins, fontsize, etc to fit your waybar aesthetic 
-```
+```css
 @define-color error #F96184;
 @define-color warning #F6B016;
 @define-color success #01D38F;
