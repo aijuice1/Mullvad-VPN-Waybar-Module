@@ -1,11 +1,24 @@
 # Mullvad-VPN-Waybar-Module
-Mullvad VPN Waybar Module
+##Mullvad VPN Waybar Module
 
+## Dependencies
+'''bash
+Mullvad-vpn or Mullvad-vpn-cli
+'''
 
-To configure - Find your waybar config. Typically ~/.config/waybar folder
+## Getting Started
+What you will need. Files available above.
+1) Mullvad.sh script
+2) Mullvad Module.json
+3) Mullvad Config Module.css
+4) Mullvad Config Module Location.conf
 
+## Installation
 
 Place your Mullvad.sh file wherever you want it to pull from. I personally put my Mullvad.sh in ~/.config/scripts foler that I created
+
+Find your waybar config. Typically ~/.config/waybar folder
+
 
 
 Add the script to your waybar.json file. Make sure to place your path to wherever you put your Mullvad.sh file
