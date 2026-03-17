@@ -5,11 +5,10 @@
 
 ## Dependencies
 ```
+#install using your package manager, one of the following (bin works as well)
 Mullvad-vpn
-#or
 Mullvad-vpn-cli
 ```
-Use your package manager for your Linux Distro
 
 ## Getting Started
 What you will need. Files available above.
