@@ -6,6 +6,7 @@
 ## Dependencies
 ```
 #install using your package manager, one of the following (bin works as well)
+
 Mullvad-vpn
 Mullvad-vpn-cli
 ```
