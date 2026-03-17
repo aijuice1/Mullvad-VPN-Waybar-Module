@@ -1,0 +1,35 @@
+@define-color error #F96184;
+@define-color warning #F6B016;
+@define-color success #01D38F;
+
+#custom-mullvad {
+  min-width: 16px;
+  margin: 0 10px;
+}
+
+#custom-mullvad.connecting {
+  color: @warning;
+  font-size: 16px;
+  margin: 0px 10px 0px 0px;
+}
+#custom-mullvad.connected {
+  color: @success;
+  font-size: 16px;
+  margin: 0px 10px 0px 0px;
+}
+#custom-mullvad.disconnected {
+  font-size: 16px;
+  margin: 0px 10px 0px 0px;
+  color: @error;
+}
+
+/*
+You can change font-size, min-edith, margin for your specific waybar
+You can change the define color for a specific color you want
+By default connect is green, connecting is yellow, and disconnected is red
+Icons can be changed and are defined in Mullvad Module.json
+"connected": "🔒",
+"connecting": "⏳",
+"disconnected": "🔒",
+
+*/
