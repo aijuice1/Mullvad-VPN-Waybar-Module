@@ -1,0 +1,24 @@
+ // Mullvad
+  "custom/mullvad": {
+    "format": "{icon}",
+    "exec": "~/your_path_to/mullvad.sh",
+    "interval": 60,
+    "return-type": "json",
+    "on-click": "~/your_path_to//mullvad.sh toggle",
+    "on-click-middle": "mullvad-vpn",
+    "on-click-right": "~/your_path_to/mullvad.sh reconnect",
+    "format-icons": {
+      "connected": "🔒",
+      "connecting": "⏳",
+      "disconnected": "🔒",
+    },
+    "tooltip": true,
+  },
+
+
+//icons can be changed by using your own icons nerdfonts.com is what I used
+
+//make sure to add field whever you want mullvad to show in your waybar  
+//"modules-left": [],
+//"modules-center": [],
+//"modules-right": ["custom/mullvad"]
