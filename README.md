@@ -100,7 +100,7 @@ You can also change the width, margins, fontsize, etc to fit your waybar aesthet
 
 5) Kill and restart your waybar
 
-```
+```bash
 killall waybar && waybar &
 ```
 
