@@ -16,9 +16,3 @@
   },
 
 
-//icons can be changed by using your own icons nerdfonts.com is what I used
-
-//make sure to add field whever you want mullvad to show in your waybar  
-//"modules-left": [],
-//"modules-center": [],
-//"modules-right": ["custom/mullvad"]
