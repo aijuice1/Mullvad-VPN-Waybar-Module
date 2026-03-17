@@ -4,6 +4,7 @@
 ```
 Mullvad-vpn or Mullvad-vpn-cli
 ```
+Use your package manager for your Linux Distro
 
 ## Getting Started
 What you will need. Files available above.
@@ -14,11 +15,13 @@ What you will need. Files available above.
 
 ## Installation
 
-Place your Mullvad.sh file wherever you want it to pull from. I personally put my Mullvad.sh in ~/.config/scripts foler that I created
-
-Find your waybar config. Typically ~/.config/waybar folder
-
-
+1) Place Mullvad.sh in folder where you want it to pull from. 
+I personally use ~/.config/scripts to house my various scripts.
+Make the script executable. Typically by using the command
+```
+cd /path/to/your/file
+chmod +x filename.sh
+```
 
 Add the script to your waybar.json file. Make sure to place your path to wherever you put your Mullvad.sh file
 
