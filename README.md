@@ -1,9 +1,9 @@
 # Mullvad-VPN-Waybar-Module
 
 ## Dependencies
-'''
+```
 Mullvad-vpn or Mullvad-vpn-cli
-'''
+```
 
 ## Getting Started
 What you will need. Files available above.
