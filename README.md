@@ -1,4 +1,5 @@
 # Mullvad-VPN-Waybar-Module
+<img width="30" height="33" alt="image" src="https://github.com/user-attachments/assets/60a334e6-9401-4138-be53-0cc9b9675e3d" />
 
 ## Dependencies
 ```
