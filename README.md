@@ -2,7 +2,9 @@
 
 ## Dependencies
 ```
-Mullvad-vpn or Mullvad-vpn-cli
+Mullvad-vpn
+#or
+Mullvad-vpn-cli
 ```
 Use your package manager for your Linux Distro
 
@@ -22,25 +24,100 @@ Make the script executable. Typically by using the command
 cd /path/to/your/file
 chmod +x filename.sh
 ```
+For my recommended location this would be
+```
+cd ~/.config/scripts
+chmod +x Mullvad.sh
+```
+2) Add the script to your waybar.json file. Make sure to place your path to wherever you put your Mullvad.sh file
+Feel free to add your own custom icons. I used [nerdfonts](nerdfonts.com) for this portion
+```
+ // Mullvad
+  "custom/mullvad": {
+    "format": "{icon}",
+    "exec": "~/your_path_to/mullvad.sh",
+    "interval": 60,
+    "return-type": "json",
+    "on-click": "~/your_path_to//mullvad.sh toggle",
+    "on-click-middle": "mullvad-vpn",
+    "on-click-right": "~/your_path_to/mullvad.sh reconnect",
+    "format-icons": {
+      "connected": "🔒",
+      "connecting": "⏳",
+      "disconnected": "🔒",
+    },
+    "tooltip": true,
+  },
+```
+3) Determine where Mullvad VPN Module will go in your waybar
+Add "custom/mullvad", to your waybar.conf file. Typically located in ~/.config/waybar
+Choose between Modules Left, Modules Center, or Modules Right"
+Place only the "custom/mullvad" amongst where you want it in your waybar order
+```
+// Modules Right    
+    "modules-right": [
+        "custom/updates",
+        "pulseaudio",
+        "network",
+        "custom/mullvad",
+        "tray",
+        "clock"
+    ]
+```
+4)  Add the Mullvad Config Module.css wherever your waybar .css file is. Typically in the same foler as your waybar.conf and waybar.json file in ~./config/waybar
+Feel free to change the colors under define color after the hashtag for the specific color you would like
+You can also change the width, margins, fontsize, etc to fit your waybar aesthetic 
+```
+@define-color error #F96184;
+@define-color warning #F6B016;
+@define-color success #01D38F;
 
-Add the script to your waybar.json file. Make sure to place your path to wherever you put your Mullvad.sh file
+#custom-mullvad {
+  min-width: 16px;
+  margin: 0 10px;
+}
+
+#custom-mullvad.connecting {
+  color: @warning;
+  font-size: 16px;
+  margin: 0px 10px 0px 0px;
+}
+#custom-mullvad.connected {
+  color: @success;
+  font-size: 16px;
+  margin: 0px 10px 0px 0px;
+}
+#custom-mullvad.disconnected {
+  font-size: 16px;
+  margin: 0px 10px 0px 0px;
+  color: @error;
+}
+```
 
 
-Add "custom/mullvad", to your waybar.conf file 
+5) Kill and restart your waybar
 
-Check Mullvad Config Module Location file for more details
-
-
-Add the Mullvad Config Module.css wherever your waybar .css file is. Typically in the same foler as your waybar.conf and waybar.json file in ~./config/waybar
-
-
-Lastly, kill and restart your waybar to see the changes.
-
-
+```
 killall waybar && waybar &
+```
 
-
-You can change the colors, modeule location, size, font, etc to fit yours. Feel Free to change the icon as well. Nerdfonts.com is a great place to look.
-
+## Notes
 
 I created this code from tons of different github projects I saw and put what I liked together. Good luck people. Sorry for the bad format. I am new to posting to github and will fix in the future.
+
+Thank you, Mullvad, the VPN I trust!
+
+https://mullvad.net/en
+
+This wouldn't be possible without!
+
+https://github.com/Alexays/Waybar
+
+## Project I used to help me
+Thank you 
+https://github.com/Jonathandah/mullvad-waybar-module
+
+## Contribute or Leave Comments
+Feel free to submit any issues or your own versions! 
+Thank you, OpenSource Community!
+
