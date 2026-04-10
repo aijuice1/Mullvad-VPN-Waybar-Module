@@ -33,7 +33,7 @@ cd ~/.config/scripts
 chmod +x mullvad.sh
 ```
 2) Add the script to your waybar modules.json file. Make sure to place your path to wherever you put your mullvad.sh file
-Feel free to add your own custom icons. I used [nerdfonts](nerdfonts.com) for this portion
+Feel free to add your own custom icons.
 ```json
  // Mullvad
   "custom/mullvad": {
