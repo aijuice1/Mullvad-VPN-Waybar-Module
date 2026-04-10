@@ -67,7 +67,7 @@ Place only the "custom/mullvad" amongst where you want it in your waybar order
         "clock"
     ]
 ```
-4)  Add the Mullvad Config Module.css wherever your waybar .css file is. Typically in the same foler as your waybar.conf and waybar.json file in ~./config/waybar
+4)  Add the Mullvad Config Module.css wherever your waybar style.css (typically) file is. Typically in the same foler as your waybar.conf and waybar.json file in ~./config/waybar
 Feel free to change the colors under define color after the hashtag for the specific color you would like
 You can also change the width, margins, fontsize, etc to fit your waybar aesthetic 
 ```css
